@@ -1,0 +1,157 @@
+.App{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    .wrap{
+        img{
+            max-width: 100%;
+        }
+        max-width: 980px;
+        margin: auto;
+        .headerDivider {
+            height: 44px;
+            margin: 10px 0;
+            float: left;
+            border-left: 1px solid rgb(255,255,255)
+        }
+        #logo{
+            color: #fff;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        #nav{
+            float: left;
+            margin-left: 55px;
+        }
+        .xsNav{
+            position: absolute;
+            right: 20px;
+            top: 0;
+            width: auto;
+        }
+    }
+    #userList{
+        .ant-list-item{
+            position: relative;
+            display: block;
+        }
+        h4{
+            display: inline;
+            margin-bottom: 0;
+        }
+        .userName{
+            margin:0 10px 0 5px;
+        }
+        time{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    @media all and(max-width:767px) {
+        #userList{
+            h4{
+                display: block;
+            }
+        }  
+    }
+    #footerTxt{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    #main {
+        flex:1;
+        .wrap{
+            border:1px solid #ccc;
+            border-top: none;
+            background-color: #fff;
+            overflow: hidden;
+            #sider{  
+                #indexMenu{
+                    padding-bottom: 9999px;
+                    margin-bottom: -9999px;
+                    li {
+                        text-align: center;
+                        font-family: "宋体";
+                    }
+                    .ant-menu-item-selected{
+                        border-right: 3px solid #1890ff;
+                    }
+                }
+            }
+        }
+        #content {
+            p{
+                margin: 0px;
+            }
+        }
+        .userAvatar{
+            display: block;
+            margin: 10px auto;
+        }
+        .userinfo{
+            max-width: 100%;
+            display: flex;
+            font-size: 18px;
+            text-align: center;
+            line-height: 24px;
+            padding-bottom: 10px;
+            .ant-col{
+                flex:1;
+            }
+        }
+    }
+    .ant-layout-footer{
+        border-top: 1px solid #ccc;
+    }
+    /* @media all and(max-width:767px) {
+        #sider{
+            width: 100%;
+        }
+        #indexMenu{
+            display: flex;
+            border-bottom: 1px solid #ccc;
+            li {
+                flex: 1;
+                margin: 0 0 -1px 0;
+            }
+            .ant-menu-item-selected{
+                border-right: none !important;
+                border-bottom: 1px solid #1890ff;
+            }
+        }
+        #content {
+            border-left: none !important;
+        }
+    } */
+    #xsSider{
+        #indexMenu{
+            border-right: none;
+            li {
+                text-align: center;
+                font-family: "宋体";
+                margin: 0 36px;
+            }
+            .ant-menu-item-selected{
+                border-bottom: 3px solid #1890ff;
+            }
+        }
+    }
+    #bookIndex{
+        .ant-card-head-title{
+            font-size: 30px;
+            font-weight:bold;
+        }
+    }
+    #aboutIndex{
+        .ant-card-head-title{
+            font-size: 30px;
+            font-weight:bold;
+        }
+    }
+    .ant-list-item-meta{
+        min-width: 200px;
+        align-items: center;
+    }
+}
